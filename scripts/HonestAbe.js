@@ -1,11 +1,22 @@
+import { Corporations } from "./Corporations.js"
 import { Politicians } from "./Politicians.js"
+import { PacDonations } from "./Donations.js"
 
-export const HonestAble = () => {
+export const HonestAbe = () => {
     return `
-    <section class="politiciansContainer">
-        <h2>Politicians</h2>
-        <h3>${Politicians()}</h3>
-    </section>
+    <article class="politicians">
+        ${Politicians()}
+    </article>
+    <article class="corporations">
+        ${Corporations()}
+    </article>
+    
+    <article class="pacs">
+        ${PacDonations()}
+    </article>
     `
 }
 
+
+
+    
